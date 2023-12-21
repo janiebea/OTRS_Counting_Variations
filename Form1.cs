@@ -15,6 +15,7 @@ namespace OTRS_Counting_Variations
             if(fileDialog.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = fileDialog.FileName;
+                calculateButton.Visible = true;
             }
         }
     }

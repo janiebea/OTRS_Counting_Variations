@@ -33,6 +33,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.combinationLabel = new System.Windows.Forms.Label();
             this.countLabel = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -82,11 +83,22 @@
             this.countLabel.TabIndex = 4;
             this.countLabel.Text = "Times Eaten";
             // 
+            // calculateButton
+            // 
+            this.calculateButton.Location = new System.Drawing.Point(301, 111);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(85, 27);
+            this.calculateButton.TabIndex = 5;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.countLabel);
             this.Controls.Add(this.combinationLabel);
             this.Controls.Add(this.splitContainer1);
@@ -108,5 +120,6 @@
         private SplitContainer splitContainer1;
         private Label combinationLabel;
         private Label countLabel;
+        private Button calculateButton;
     }
 }
