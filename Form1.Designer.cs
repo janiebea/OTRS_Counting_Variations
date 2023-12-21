@@ -93,7 +93,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.browseButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Icecream Counter";
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
