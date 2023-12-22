@@ -117,14 +117,10 @@ namespace OTRS_Counting_Variations
             foreach (var c in combinations) combinationListBox.Items.Add($"{c.FlavorOne}, {c.FlavorTwo}, {c.FlavorThree}");
             foreach (var c in combinationCounts) countListBox.Items.Add(c);
 
-
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
     }
 
