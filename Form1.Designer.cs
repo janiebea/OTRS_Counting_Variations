@@ -30,12 +30,11 @@
         {
             this.browseButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.combinationLabel = new System.Windows.Forms.Label();
             this.countLabel = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.SuspendLayout();
+            this.combinationListBox = new System.Windows.Forms.ListBox();
+            this.countListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // browseButton
@@ -57,18 +56,10 @@
             this.textBox1.Size = new System.Drawing.Size(316, 27);
             this.textBox1.TabIndex = 1;
             // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Location = new System.Drawing.Point(164, 194);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Size = new System.Drawing.Size(484, 190);
-            this.splitContainer1.SplitterDistance = 308;
-            this.splitContainer1.TabIndex = 2;
-            // 
             // combinationLabel
             // 
             this.combinationLabel.AutoSize = true;
-            this.combinationLabel.Location = new System.Drawing.Point(291, 171);
+            this.combinationLabel.Location = new System.Drawing.Point(209, 172);
             this.combinationLabel.Name = "combinationLabel";
             this.combinationLabel.Size = new System.Drawing.Size(95, 20);
             this.combinationLabel.TabIndex = 3;
@@ -77,7 +68,7 @@
             // countLabel
             // 
             this.countLabel.AutoSize = true;
-            this.countLabel.Location = new System.Drawing.Point(516, 171);
+            this.countLabel.Location = new System.Drawing.Point(456, 172);
             this.countLabel.Name = "countLabel";
             this.countLabel.Size = new System.Drawing.Size(89, 20);
             this.countLabel.TabIndex = 4;
@@ -94,21 +85,38 @@
             this.calculateButton.Visible = false;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
+            // combinationListBox
+            // 
+            this.combinationListBox.FormattingEnabled = true;
+            this.combinationListBox.ItemHeight = 20;
+            this.combinationListBox.Location = new System.Drawing.Point(209, 214);
+            this.combinationListBox.Name = "combinationListBox";
+            this.combinationListBox.Size = new System.Drawing.Size(256, 164);
+            this.combinationListBox.TabIndex = 6;
+            // 
+            // countListBox
+            // 
+            this.countListBox.FormattingEnabled = true;
+            this.countListBox.ItemHeight = 20;
+            this.countListBox.Location = new System.Drawing.Point(456, 214);
+            this.countListBox.Name = "countListBox";
+            this.countListBox.Size = new System.Drawing.Size(151, 164);
+            this.countListBox.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.countListBox);
+            this.Controls.Add(this.combinationListBox);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.countLabel);
             this.Controls.Add(this.combinationLabel);
-            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.browseButton);
             this.Name = "Form1";
             this.Text = "Icecream Counter";
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,9 +126,10 @@
 
         private Button browseButton;
         private TextBox textBox1;
-        private SplitContainer splitContainer1;
         private Label combinationLabel;
         private Label countLabel;
         private Button calculateButton;
+        private ListBox combinationListBox;
+        private ListBox countListBox;
     }
 }
