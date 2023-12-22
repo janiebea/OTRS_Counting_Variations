@@ -92,6 +92,7 @@
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Visible = false;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // Form1
             // 
