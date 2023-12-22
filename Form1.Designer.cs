@@ -39,7 +39,7 @@
             // 
             // browseButton
             // 
-            this.browseButton.Location = new System.Drawing.Point(536, 78);
+            this.browseButton.Location = new System.Drawing.Point(566, 66);
             this.browseButton.Name = "browseButton";
             this.browseButton.Size = new System.Drawing.Size(87, 27);
             this.browseButton.TabIndex = 0;
@@ -50,16 +50,16 @@
             // textBox1
             // 
             this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.textBox1.Location = new System.Drawing.Point(192, 78);
+            this.textBox1.Location = new System.Drawing.Point(168, 66);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(316, 27);
+            this.textBox1.Size = new System.Drawing.Size(370, 27);
             this.textBox1.TabIndex = 1;
             // 
             // combinationLabel
             // 
             this.combinationLabel.AutoSize = true;
-            this.combinationLabel.Location = new System.Drawing.Point(209, 172);
+            this.combinationLabel.Location = new System.Drawing.Point(202, 174);
             this.combinationLabel.Name = "combinationLabel";
             this.combinationLabel.Size = new System.Drawing.Size(95, 20);
             this.combinationLabel.TabIndex = 3;
@@ -68,7 +68,7 @@
             // countLabel
             // 
             this.countLabel.AutoSize = true;
-            this.countLabel.Location = new System.Drawing.Point(456, 172);
+            this.countLabel.Location = new System.Drawing.Point(449, 174);
             this.countLabel.Name = "countLabel";
             this.countLabel.Size = new System.Drawing.Size(89, 20);
             this.countLabel.TabIndex = 4;
@@ -76,7 +76,7 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(301, 111);
+            this.calculateButton.Location = new System.Drawing.Point(304, 99);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(85, 27);
             this.calculateButton.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             this.combinationListBox.FormattingEnabled = true;
             this.combinationListBox.ItemHeight = 20;
-            this.combinationListBox.Location = new System.Drawing.Point(209, 214);
+            this.combinationListBox.Location = new System.Drawing.Point(202, 216);
             this.combinationListBox.Name = "combinationListBox";
             this.combinationListBox.Size = new System.Drawing.Size(256, 164);
             this.combinationListBox.TabIndex = 6;
@@ -98,7 +98,7 @@
             // 
             this.countListBox.FormattingEnabled = true;
             this.countListBox.ItemHeight = 20;
-            this.countListBox.Location = new System.Drawing.Point(456, 214);
+            this.countListBox.Location = new System.Drawing.Point(449, 216);
             this.countListBox.Name = "countListBox";
             this.countListBox.Size = new System.Drawing.Size(151, 164);
             this.countListBox.TabIndex = 7;
@@ -117,6 +117,7 @@
             this.Controls.Add(this.browseButton);
             this.Name = "Form1";
             this.Text = "Icecream Counter";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
